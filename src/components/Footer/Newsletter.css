@@ -1,0 +1,156 @@
+.app__newsletter {
+  padding: 2rem 4rem;
+  border: 1px solid rgb(255, 235, 125) !important;
+  background: black;
+}
+
+.app__newsletter-heading {
+  text-align: center;
+}
+
+.app__newsletter-input {
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.app__newsletter-input input {
+  width: 620px;
+  border: 1px solid rgb(255, 235, 125);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+
+  margin-right: 2rem;
+  padding: 0.75rem 1rem;
+  background: black;
+}
+
+.app__newsletter-input button {
+  width: max-content;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+  .app__newsletter-input input {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .app__newsletter-input {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .app__newsletter-input input {
+    margin: 0 0 2rem 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__newsletter {
+    border: none;
+  }
+  
+}
+
+@media screen and (max-width: 300px) {
+  .app__newsletter-heading h1 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+}
+
+
+.FechayHora {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.FechayHora_item {
+ background-color: black;
+ height: 40px;
+ border: 1px solid rgb(255, 235, 125);
+ background-color: rgb(0, 0, 0);
+ border-radius: 5px;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-size: 1rem;
+ color:rgb(255, 235, 125);
+ accent-color: white;
+ 
+}
+
+
+
+.Texto_FechayHora {
+  color:  rgb(255, 235, 125);
+  text-align: center;
+}
+
+
+
+.FechayHora_items {
+display: flex;
+flex-direction: column;
+}
+
+.form_boton{ 
+  font-size: 1rem;
+ align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 70px;
+  width: 130px;
+  background-color: black;
+  cursor: pointer;
+  color:rgb(255, 235, 125);
+  border: 1px solid rgb(255, 235, 125);
+  border-radius: 5px;
+  margin-top: 10px ;
+}
+
+.form_boton_div{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.ov-btn-grow-skew {
+  background: rgb(0, 0, 0); /* color de fondo */
+  color: rgb(255, 235, 125); /* color de fuente */
+  border: 2px solid rgb(255, 235, 125); /* tamaño y color de borde */
+  /* padding: 16px 20px; */
+  border-radius: 3px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-grow-skew:hover {
+  color: #000000;/* color de fuente hover */
+}
+.ov-btn-grow-skew::after {
+  content: "";
+  background: rgb(255, 235, 125); /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.ov-btn-grow-skew:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(-45deg) scale(1, 1);
+}

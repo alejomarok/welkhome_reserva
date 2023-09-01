@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background: rgb(29, 29, 29);
+    font-family: sistem-ui;
+    display: grid;
+    place-content: center ;
+}
+
+
+.App {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
