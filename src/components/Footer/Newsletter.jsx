@@ -16,10 +16,10 @@ const Newsletter = () => (
       <input type="name" placeholder="Ingrese su nombre y apellido" />
     </div>
     <div className="app__newsletter-input flex__center">
-       <input type="email" placeholder="Ingrese su mail" />   
+       <input type="email" placeholder="Ingrese su e-mail" />   
     </div> 
     <div className="app__newsletter-input flex__center">
-       <input type="phone" placeholder="Ingrese su Telefono" />   
+       <input type="phone" placeholder="Ingrese su teléfono" />   
     </div> 
 
     <div>
